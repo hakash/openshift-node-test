@@ -7,7 +7,12 @@ router.get("/", function(req, res, next){
 	MongoClient.connect("mongodb://mongodb.test.svc:27017/exampleDb", function(err, db) {
 		if(!err) {
 			console.log("We are connected");
-			res.status(200).json({"test":"Success"});
+			res.status(200).json(
+				{
+					"test":"Success",
+					"test2":"Hei Morten!"
+				}
+			);
 		}
 	});
 });
