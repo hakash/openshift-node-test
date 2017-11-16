@@ -9,6 +9,9 @@ var port = 8080;
 var index = require('./controller/index.js');
 app.use("/", index);
 
+var dbtest = require('./controller/dbtest.js');
+app.use("/dbtest", dbtest);
+
 
 
 // Error handling middleware must be after all other middleware and routing.
