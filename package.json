@@ -1,0 +1,26 @@
+{
+  "name": "openshift-node-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "",
+    "start":"node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hakash/openshift-node-test.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hakash/openshift-node-test/issues"
+  },
+  "homepage": "https://github.com/hakash/openshift-node-test#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "jquery": "^3.2.1",
+    "mongodb": "^2.2.33"
+  }
+}
