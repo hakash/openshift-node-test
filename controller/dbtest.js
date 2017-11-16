@@ -4,7 +4,7 @@ var router = express.Router();
 
 router.get("/", function(req, res, next){
 	// Connect to the db
-	MongoClient.connect("mongodb://mongodb.test.svc:27017/exampleDb", function(err, db) {
+	MongoClient.connect("mongodb://mongodb.test.svc:27017/mongodb", function(err, db) {
 		if(!err) {
 			console.log("We are connected");
 			res.status(200).json(
